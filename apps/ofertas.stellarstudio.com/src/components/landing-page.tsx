@@ -69,7 +69,7 @@ const socialMonthlyPlans = [
 		title: "1 Reels/sem",
 		oldP1: "R$ 1.049,90",
 		p1: "R$ 949,90",
-		p3: "A Consultar",	
+		p3: "A Consultar",
 		recurrence: "Contrato mínimo 3 meses",
 		badge: "✦ Promoção Especial",
 		note: "Ponto de entrada para quem ainda não tem presença ativa nas redes.",
@@ -358,7 +358,7 @@ export default function LandingPage() {
 														</div>
 													</div>
 													<p className="plan-recurrence">{pack.recurrence}</p>
-														<ul className="reel-pack-features">
+													<ul className="reel-pack-features">
 														{pack.features.map((item) => (
 															<li key={item}>
 																<span className="text-primaryds">✦</span>
@@ -368,17 +368,17 @@ export default function LandingPage() {
 													</ul>
 													<p className="plan-note">{pack.note}</p>
 												</div>
-														<Button asChild className="plan-cta w-full">
-															<a
-																href={buildInstagramLink(
-																	`Ol\u00e1! Tenho interesse no plano ${pack.name} de Social Media da Stellar Studio.`,
-																)}
-																target="_blank"
-																rel="noopener noreferrer"
-															>
-																Quero este plano
-															</a>
-														</Button>
+												<Button asChild className="plan-cta w-full">
+													<a
+														href={buildInstagramLink(
+															`Ol\u00e1! Tenho interesse no plano ${pack.name} de Social Media da Stellar Studio.`,
+														)}
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														Quero este plano
+													</a>
+												</Button>
 											</article>
 										))}
 									</div>
@@ -445,103 +445,103 @@ export default function LandingPage() {
 											</div>
 											<div className="avulso-notes-col">
 												<h5>Pacote Completo</h5>
-													<ul>
-														<li>Tudo do "Apenas Edição"</li>
-														<li>Deslocamento dentro de Brasília-DF</li>
-														<li>Locação de espaço (por conta do cliente)</li>
-														<li>Até 2h de captação por dia</li>
-														<li>
-															Equipamento básico incluído (celular + ring light)
-														</li>
-													</ul>
+												<ul>
+													<li>Tudo do "Apenas Edição"</li>
+													<li>Deslocamento dentro de Brasília-DF</li>
+													<li>Locação de espaço (por conta do cliente)</li>
+													<li>Até 2h de captação por dia</li>
+													<li>
+														Equipamento básico incluído (celular + ring light)
+													</li>
+												</ul>
 											</div>
 											<div className="avulso-notes-col">
 												<h5>Adicionais e Especiais</h5>
-													<ul>
-														<li>Acima de 2h de captação: +R$ 150/hora</li>
-														<li>Câmera + iluminação avançada: sob consulta</li>
-														<li>Equipamento de drone: sob consulta</li>
-													</ul>
+												<ul>
+													<li>Acima de 2h de captação: +R$ 150/hora</li>
+													<li>Câmera + iluminação avançada: sob consulta</li>
+													<li>Equipamento de drone: sob consulta</li>
+												</ul>
 											</div>
 										</div>
 									</div>
-									</div>
+								</div>
 							) : null}
 
 							{reelsTab === "artes-avulso" ? (
-									<div className="avulso-table-wrap">
-										<div className="avulso-table-header">
-											<h3>Artes Estáticas / Carrossel</h3>
-											<p>
-												Preço por peça conforme modalidade e quantidade de
-												slides. Toda entrega inclui design personalizado,
-												hierarquia visual e arte pronta para publicação.
-											</p>
+								<div className="avulso-table-wrap">
+									<div className="avulso-table-header">
+										<h3>Artes Estáticas / Carrossel</h3>
+										<p>
+											Preço por peça conforme modalidade e quantidade de
+											slides. Toda entrega inclui design personalizado,
+											hierarquia visual e arte pronta para publicação.
+										</p>
+									</div>
+									<div
+										className="avulso-table-scroll"
+										role="region"
+										aria-label="Tabela de preços de artes estáticas e carrossel"
+									>
+										<table className="avulso-table">
+											<thead>
+												<tr>
+													<th>Modalidade</th>
+													<th>Arte Estática</th>
+													<th>Carrossel 3-5 slides</th>
+													<th>Carrossel 6-8 slides</th>
+													<th>9+ slides</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Apenas Design</td>
+													<td>R$ 60</td>
+													<td>R$ 140</td>
+													<td>R$ 210</td>
+													<td>A consultar</td>
+												</tr>
+												<tr className="avulso-row-featured">
+													<td>Pacote Completo</td>
+													<td>R$ 140</td>
+													<td>R$ 260</td>
+													<td>R$ 360</td>
+													<td>A consultar</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div className="avulso-notes">
+										<div className="avulso-notes-header">
+											<h4>
+												<em className="text-primaryds">✦</em> O que está
+												incluído em cada modalidade
+											</h4>
+											<p>Entenda melhor a composição de cada entrega</p>
 										</div>
-										<div
-											className="avulso-table-scroll"
-											role="region"
-											aria-label="Tabela de preços de artes estáticas e carrossel"
-										>
-											<table className="avulso-table">
-												<thead>
-													<tr>
-														<th>Modalidade</th>
-														<th>Arte Estática</th>
-														<th>Carrossel 3-5 slides</th>
-														<th>Carrossel 6-8 slides</th>
-														<th>9+ slides</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Apenas Design</td>
-														<td>R$ 60</td>
-														<td>R$ 140</td>
-														<td>R$ 210</td>
-														<td>A consultar</td>
-													</tr>
-													<tr className="avulso-row-featured">
-														<td>Pacote Completo</td>
-														<td>R$ 140</td>
-														<td>R$ 260</td>
-														<td>R$ 360</td>
-														<td>A consultar</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div className="avulso-notes">
-											<div className="avulso-notes-header">
-												<h4>
-													<em className="text-primaryds">✦</em> O que está
-													incluído em cada modalidade
-												</h4>
-												<p>Entenda melhor a composição de cada entrega</p>
+										<div className="avulso-notes-grid2">
+											<div className="avulso-notes-col">
+												<h5>Apenas Design</h5>
+												<ul>
+													<li>Layout visual profissional</li>
+													<li>Composição para feed</li>
+													<li>Entrega em alta qualidade</li>
+													<li>1 revisão por peça</li>
+												</ul>
 											</div>
-											<div className="avulso-notes-grid2">
-												<div className="avulso-notes-col">
-													<h5>Apenas Design</h5>
-													<ul>
-														<li>Layout visual profissional</li>
-														<li>Composição para feed</li>
-														<li>Entrega em alta qualidade</li>
-														<li>1 revisão por peça</li>
-													</ul>
-												</div>
-												<div className="avulso-notes-col">
-													<h5>Pacote Completo</h5>
-													<ul>
-														<li>Copywriting avançado</li>
-														<li>Direcionamento criativo por tema</li>
-														<li>Sequência narrativa para carrossel</li>
-														<li>Guia de publicação e horário</li>
-														<li>Até 2 revisões por peça</li>
-													</ul>
-												</div>
+											<div className="avulso-notes-col">
+												<h5>Pacote Completo</h5>
+												<ul>
+													<li>Copywriting avançado</li>
+													<li>Direcionamento criativo por tema</li>
+													<li>Sequência narrativa para carrossel</li>
+													<li>Guia de publicação e horário</li>
+													<li>Até 2 revisões por peça</li>
+												</ul>
 											</div>
 										</div>
 									</div>
+								</div>
 							) : null}
 						</TabsContent>
 					</Tabs>
