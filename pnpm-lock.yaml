@@ -12,6 +12,34 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1
 
+  apps/grifesuites-preview:
+    dependencies:
+      lucide-react:
+        specifier: ^0.545.0
+        version: 0.545.0(react@19.2.0)
+      next:
+        specifier: 15.5.9
+        version: 15.5.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react:
+        specifier: 19.2.0
+        version: 19.2.0
+      react-dom:
+        specifier: 19.2.0
+        version: 19.2.0(react@19.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^24.10.4
+        version: 24.10.13
+      '@types/react':
+        specifier: 19.1.7
+        version: 19.1.7
+      '@types/react-dom':
+        specifier: 19.1.6
+        version: 19.1.6(@types/react@19.1.7)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
   apps/ofertas.stellarstudio.com:
     dependencies:
       '@calcom/embed-react':
