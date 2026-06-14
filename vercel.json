@@ -1,6 +1,6 @@
 {
-  "buildCommand": "turbo run build --filter=stellarstudio.com",
-  "outputDirectory": "apps/stellarstudio.com/.next",
-  "installCommand": "pnpm install",
+  "buildCommand": "cd ../.. && turbo run build --filter=stellarstudio.com",
+  "outputDirectory": ".next",
+  "installCommand": "cd ../.. && pnpm install",
   "framework": "nextjs"
 }
